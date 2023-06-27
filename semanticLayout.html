@@ -4,8 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Semantic Layout HTML</title>
+    <style>
+      .home,
+      .search,
+      .Layout {
+        display: inline;
+        background-color: greenyellow;
+        padding: 20px;
+        text-align: center;
+        font-style: normal;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
+      }
+      #navbar {
+        margin-top: 30px;
+      }
+    </style>
   </head>
   <body>
+    <nav id="navbar">
+      <div class="home">Home</div>
+      <div class="search">Search</div>
+      <div class="Layout">Layout</div>
+    </nav>
     <article>
       <header>
         <h1>Judul Artikel</h1>
