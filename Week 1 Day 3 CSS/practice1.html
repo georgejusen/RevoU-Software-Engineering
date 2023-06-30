@@ -1,0 +1,230 @@
+<html>
+<style>
+    nav {
+        margin-bottom: 100px;
+    }
+
+    #h1 {
+        text-align: center;
+        padding: 10px;
+        margin: 20px
+    }
+
+    #h3 {
+        text-align: left;
+        padding: 1px;
+        margin: 10px
+    }
+
+    #paragrap {
+        text-align: left;
+        padding: 1px;
+        margin: 10px
+    }
+
+    #myTable {
+        font-family: 'helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+        border-collapse: collapse;
+        border: solid 1px #BFBFBF;
+    }
+
+    #myTable td {
+        padding: 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #myTable tr {
+        background-color: #FFFFFF;
+        color: #000000;
+
+    }
+
+    #myTable tr:hover {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+
+    #myTable th {
+        border: solid 1px #BFBFBF;
+        padding: 10px;
+        color: #000000;
+        background-color: #D4D4D4;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #FormTables {
+        font-family: 'helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+        border-collapse: collapse;
+    }
+
+    #FormTables td {
+        border: solid 0px #C9C9C9;
+        padding: 10px;
+        font-size: 12px;
+        text-align: left;
+
+    }
+
+    #FormTables th {
+        border: solid 1px #BFBFBF;
+        padding: 10px;
+        color: #000000;
+        background-color: #D4D4D4;
+        text-align: center;
+        font-size: 12px;
+
+    }
+</style>
+
+<head>
+    <title>Practice 1st</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/b4775b7ab8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <article>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand">Navbar</a>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <main>
+            <p>
+            <table id="FormTables" width=100%>
+                <tr>
+                    <td width="50%">
+                        <!-- Form Entryan-->
+                        <form>
+                            <!-- Input type text -->
+                            <div class="form-group row ">
+                                <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama"
+                                        required>
+                                </div>
+                            </div>
+
+                            <!-- Input type text -->
+                            <div class="form-group row ">
+                                <label for="tgl_lahir" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+                                <div class="col-sm-10">
+                                    <input type="date" class="form-control" name="tgl_lahir" id="tgl_lahir"
+                                        placeholder="Tanggal Lahir" required>
+                                </div>
+                            </div>
+
+                            <!-- Input type raio -->
+                            <div class="form-group row ">
+                                <label class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                                <div class="col-sm-10">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="jns_kelamin" id="ir_id0"
+                                            value="1" checked>
+                                        <label class="form-check-label" for="ir_id0">Laki-Laki</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="jns_kelamin" id="ir_id1"
+                                            value="2">
+                                        <label class="form-check-label" for="ir_id1">Perempuan</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- textarea -->
+                            <div class="form-group row ">
+                                <label for="pesan" class="col-sm-2 col-form-label">Pesan</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" rows="3" name="pesan" id="pesan"
+                                        placeholder="Pesan"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- button -->
+                            <div class="form-group row ">
+                                <label for="submit" class="col-sm-2 col-form-label"></label>
+                                <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-primary btn-block" name="submit"
+                                        id="submit">Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </td>
+                    <td></td>
+                    <td width="100%">
+                        <!-- Tabel Data -->
+                        <table id="myTable">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Tanggal Lahir</th>
+                                    <th scope="col">Jenis Kelamin</th>
+                                    <th scope="col">Pesan</th>
+                                    <th scope="col">Profile</th>
+                                    <th scope="col">Delete</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Ade Loviase</td>
+                                    <td>Desember 10, 1815</td>
+                                    <td>Perempuan</td>
+                                    <td>Belajar Buat Website</td>
+                                    <td><a href="https://www.w3schools.com">Klik Disini</a></td>
+                                    <td><a href="https://www.w3schools.com" class='fas fa-trash-alt'></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Grace
+                                        Hopper</td>
+                                    <td>December 9, 1906</td>
+                                    <td>Perempuan</td>
+                                    <td>Hello World</td>
+                                    <td><a href="https://www.w3schools.com">Klik Disini</a></td>
+                                    <td><a href="https://www.w3schools.com" class='fas fa-trash-alt'></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Margaret Hemilton</td>
+                                    <td>August 17, 1936</td>
+                                    <td>Perempuan</td>
+                                    <td>Test Dulu</td>
+                                    <td><a href="https://www.w3schools.com">Klik Disini</a></td>
+                                    <td><a href="https://www.w3schools.com" class='fas fa-trash-alt'></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Josh Clacke</td>
+                                    <td>June 24, 1917</td>
+                                    <td>Laki-Laki</td>
+                                    <td>Selalu Semangat</td>
+                                    <td><a href="https://www.w3schools.com">Klik Disini</a></td>
+                                    <td><a href="https://www.w3schools.com" class='fas fa-trash-alt'></a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+            </p>
+            <p></p>
+        </main>
+        <footer>
+            <p></p>
+        </footer>
+    </article>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-end;
+    background-color: aqua;
+    padding: 15px;
+    border: 5px solid;
+}
+.container > div {
+    padding-left: 25px;
+    text-align: center;
+}
+
+h2{
+    color: pink;
+}
+
+p{
+    color: red;
+}
+
+.mobil{
+    color: blue;
+}
+
+#alya{
+    color: aquamarine;
+}
