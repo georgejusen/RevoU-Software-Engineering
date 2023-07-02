@@ -85,6 +85,28 @@ body {
     font-size: 25px;
 }
 
+.our-headquarter{
+    padding: 40px;
+    width: 100%;
+
+}
+
+.profile{
+    display: flex;
+}
+
+.profile-text{
+    text-align: center;
+}
+
+.our-headquarter .profile img {
+    width: 250px;
+    border-radius: 50%;
+
+}
+
+
+
 
 
 /* mengatur main content */
