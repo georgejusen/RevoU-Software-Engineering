@@ -53,6 +53,27 @@ body {
     mix-blend-mode: multiply;
     margin-left: 40px;
 }
+/* Hero Image */
+
+
+.hero-container{
+    padding-top:80px;
+    width: 100%;
+    margin: auto;
+    /* background-size: cover; */
+}
+
+.hero {
+    height: 70vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("/RevoU-Software-Engineering/Mini Project/assets/hero_image/hero2.jpg");
+    background-size: cover;
+    background-position: 0px -200px;
+}
+
+.hero-text{
+    padding: 50px;
+    color: azure;
+}
 
 /* Mengatur Headlines */
 .headlines {
