@@ -1,36 +1,33 @@
-/* melakukan configurasi HTML dan BODY */
-
+/* melakukan konfigurasi HTML dan BODY */
 html,
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.65;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.65;
     /* padding-bottom: 1000px; */
 }
 
-
 /* Mengatur navbar */
-.nav-container{
+.nav-container {
     position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #edf0f4;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-
-.nav-navigation ul{
+.nav-navigation ul {
     margin-right: 50px;
 }
 
-.nav-navigation ul li{
+.nav-navigation ul li {
     display: inline-flex;
     align-items: center;
     list-style-type: none;
@@ -53,61 +50,65 @@ body {
     mix-blend-mode: multiply;
     margin-left: 40px;
 }
+
 /* Hero Image */
-
-
-.hero-container{
-    padding-top:80px;
+.hero-container {
+    padding-top: 80px;
     width: 100%;
     margin: auto;
-    /* background-size: cover; */
 }
 
 .hero {
-    height: 70vh;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("/RevoU-Software-Engineering/Mini Project/assets/hero_image/hero2.jpg");
+    height: 578px;
+    background: url(../assets/hero_image/hero3.jpg);
     background-size: cover;
-    background-position: 0px -200px;
+    background-position: 0px -50px;
+    background-repeat: no-repeat;
 }
 
-.hero-text{
+.hero-text {
     padding: 50px;
-    color: azure;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* Mengatur Headlines */
 .headlines {
     display: flex;
     width: 800px;
-    margin: 100px auto;
+    margin: 50px auto;
     align-items: center;
     flex-direction: column;
     font-size: 25px;
 }
 
-.our-headquarter{
-    padding: 40px;
+.our-headquarter {
     width: 100%;
-
 }
 
-.profile{
+.profile-headline h1 {
+    margin-left: 100px;
+}
+
+.profile {
     display: flex;
+    margin-left: 40px;
 }
 
-.profile-text{
+.profile-image {
+    margin: 50px;
+}
+
+.profile-text {
     text-align: center;
 }
 
 .our-headquarter .profile img {
-    width: 250px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-
+    background-size: cover;
 }
-
-
-
-
 
 /* mengatur main content */
 /* Gambar */
@@ -126,8 +127,6 @@ body {
     flex: 1;
 }
 
-
-
 /* form */
 .form-container {
     background-color: #edf0f4;
@@ -136,11 +135,7 @@ body {
     flex-direction: column;
     padding: 20px;
     margin-left: 20px;
-
 }
-
-
-
 
 .form {
     display: flex;
@@ -148,16 +143,16 @@ body {
     padding: 10px;
 }
 
-.form-container-text{
+.form-container-text {
     width: 360px;
     padding-left: 20px;
 }
 
-.form div{
-    margin:10px;
+.form div {
+    margin: 10px;
 }
 
-.form div .input{
+.form div .input {
     width: 360px;
     height: 42px;
     border-radius: 4px;
@@ -165,7 +160,7 @@ body {
     border: #6e7783;
 }
 
-.form div button{
+.form div button {
     width: 360px;
     height: 42px;
     background-color: #29323d;
@@ -173,17 +168,17 @@ body {
 }
 
 /* user testimonial */
-.testimoni{
+.testimoni {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 8px;
 }
 
-.testimoni img{
-     width: 40px;
-     margin-right: 20px;
-     justify-content: center;
+.testimoni img {
+    width: 40px;
+    margin-right: 20px;
+    justify-content: center;
 }
 
 
@@ -193,23 +188,19 @@ body {
     background-color: #fdab00;
 }
 
-
-.feature{
+.feature {
     display: flex;
 }
 
-.feature .icon img{
+.feature .icon img {
     width: 48px;
     padding: 15px;
     justify-content: center;
 }
+
 /* Fisrt Feature */
 
-
-
-
 /* Our Package */
-
 .our-package {
     margin: 50px auto;
     width: 960px;
@@ -217,41 +208,34 @@ body {
     justify-content: center;
     background-color: #edf0f4;
     padding: 20px;
-
-
 }
 
-
 /* package country */
-
 .package-country {
-  width: 960px;
-  margin: 50px auto;
-  display: flex;
+    width: 960px;
+    margin: 50px auto;
+    display: flex;
 }
 
 .country {
     display: flex;
     justify-content: center;
-    
 }
 
-.country img{
+.country img {
     margin: 20px;
     width: 48px;
-
 }
 
-.call-action{
+.call-action {
     margin-top: 80px;
     margin-bottom: 80px;
 }
 
-
-.call-action .headlines{
+.call-action .headlines {
     width: 960px;
     display: flex;
-    margin:auto;
+    margin: auto;
     flex-direction: column;
     justify-content: center;
     text-align: center;
