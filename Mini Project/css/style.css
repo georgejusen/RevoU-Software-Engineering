@@ -121,3 +121,44 @@ body {
     background-color: #29323d;
     color: white;
 }
+
+/* user testimonial */
+.testimoni{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.testimoni img{
+     width: 40px;
+     margin-right: 20px;
+     justify-content: center;
+}
+
+
+.box-container {
+    display: flex;
+    flex-direction: row
+    ;
+    background-color: #fdab00;
+}
+
+.box {
+
+}
+
+.text-box{
+    display: flex;
+}
+
+.icon{
+    display: flex;
+        margin: 20px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        background-color: #edf0f4;
+}
+
