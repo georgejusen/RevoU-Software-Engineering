@@ -96,13 +96,18 @@ body {
 
 }
 
-.
+
 
 
 .form {
     display: flex;
     flex-direction: column;
     padding: 10px;
+}
+
+.form-container-text{
+    width: 360px;
+    padding-left: 20px;
 }
 
 .form div{
