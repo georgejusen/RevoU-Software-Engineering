@@ -16,7 +16,6 @@ function validateForm() {
             return false;
         }
         
-
         document.getElementById("sender-fullname").innerHTML = fname;
         document.getElementById("sender-email").innerHTML = email;
         document.getElementById("sender-option").innerHTML = option;
