@@ -7,8 +7,11 @@ body {
     line-height: 1.65;
 }
 
-body {
-    /* padding-bottom: 1000px; */
+
+
+button{
+    border: none;
+    cursor: pointer;
 }
 
 /* Mengatur navbar */
@@ -35,7 +38,7 @@ body {
     padding: 10px;
     border-radius: 4px;
     margin-left: 20px;
-    background-color: #fdab00;
+    background-color: #89a7b1;
     color: white;
 }
 
@@ -129,12 +132,13 @@ body {
 
 /* form */
 .form-container {
-    background-color: #edf0f4;
+    background-color: #cbdad5;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     padding: 20px;
     margin-left: 20px;
+    /* color: white; */
 }
 
 .form {
@@ -163,8 +167,9 @@ body {
 .form div button {
     width: 360px;
     height: 42px;
-    background-color: #29323d;
+    background-color: #89a7b1;
     color: white;
+    
 }
 
 /* user testimonial */
@@ -188,13 +193,28 @@ body {
     background-color: #fdab00;
 }
 
+/* Feature */
+
 .feature {
     display: flex;
 }
 
-.feature .icon img {
-    width: 48px;
+.feature .icon {
     padding: 15px;
+}
+
+.circle {
+    background: #e3e3e3;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    color: #6e6e6e;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 48px;
+    margin-right: 5px;
+    text-align: center;
+    width: 48px;
     justify-content: center;
 }
 
@@ -206,8 +226,9 @@ body {
     width: 960px;
     display: flex;
     justify-content: center;
-    background-color: #edf0f4;
+    background-color: #34344e;
     padding: 20px;
+    color: white;
 }
 
 /* package country */

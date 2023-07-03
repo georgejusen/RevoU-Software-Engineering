@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Groceries Indoneisan</title>
-    <link rel="stylesheet" href="/RevoU-Software-Engineering/Mini Project/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 
@@ -13,13 +13,13 @@
     <!-- navbar -->
     <nav class="nav-container">
         <div class="logo">
-            <img src="/RevoU-Software-Engineering/Mini Project/assets/logo.png" alt="Ini Logo ya">
+            <img src="../assets/logo.png" alt="Ini Logo ya">
         </div>
         <div class="nav-navigation">
             <ul>
-                <li><a href=""></a>Home</li>
-                <li><a href=""></a>Our Package</li>
-                <li><a href=""></a>Call Us</li>
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>Our Package</li>
+                <li><a href="#"></a>Call Us</li>
             </ul>
         </div>
     </nav>
@@ -44,19 +44,19 @@
         </div>
         <div class="profile">
             <div class="profile-image">
-                <img src="/RevoU-Software-Engineering/Mini Project/assets/headquarters/budi.jpg" alt="">
+                <img src="../assets/headquarters/budi.jpg" alt="">
                 <div class="profile-text">
                     <h2>Budi</h2>
                 </div>
             </div>
             <div class="profile-image">
-                <img src="/RevoU-Software-Engineering/Mini Project/assets/headquarters/rani.jpg" alt="">
+                <img src="../assets/headquarters/rani.jpg" alt="">
                 <div class="profile-text">
                     <h2>Rani</h2>
                 </div>
             </div>
             <div class="profile-image">
-                <img src="/RevoU-Software-Engineering/Mini Project/assets/headquarters//robi.jpg" alt="">
+                <img src="../assets/headquarters//robi.jpg" alt="">
                 <div class="profile-text">
                     <h2>Robi</h2>
                 </div>
@@ -96,7 +96,8 @@
             </section>
             <section class="feature">
                 <div class="icon">
-                    <img src="../assets/number-1.png" alt="">
+                    <!-- <img src="../assets/number-1.png" alt=""> -->
+                    <div class="circle">1</div>
                 </div>
                 <div>
                     <p>Your first feature, written in the form of a benefit statement.</p>
@@ -104,7 +105,8 @@
             </section>
             <section class="feature">
                 <div class="icon">
-                    <img src="../assets/number-2.png" alt="">
+                    <div class="circle">2</div>
+                    <!-- <img src="../assets/number-2.png" alt=""> -->
                 </div>
                 <div>
                     <p>Your first feature, written in the form of a benefit statement.</p>
@@ -112,7 +114,8 @@
             </section>
             <section class="feature">
                 <div class="icon">
-                    <img src="../assets/number-3.png" alt="">
+                    <div class="circle">3</div>
+                    <!-- <img src="../assets/number-3.png" alt=""> -->
                 </div>
                 <div>
                     <p>Your first feature, written in the form of a benefit statement.</p>
@@ -128,23 +131,31 @@
             <form class="form">
                 <div>
                     <label>Your Name:</label>
-                    <input class="input" type="text" placeholder="First and Last Name">
+                    <input class="input" id="fullname" type="text" placeholder="First and Last Name" required>
                 </div>
                 <div>
                     <label>Email Address:</label>
-                    <input class="input" type="text" placeholder="example@gmail.com">
+                    <input class="input" id="email" type="email" name="email" placeholder="example@gmail.com">
                 </div>
                 <div>
-                    <label for="">What are you interested in?</label><br>
-                    <select class="input" name="cars">
+                    <!-- <label for="">What are you interested in?</label><br>
+                    <select id="option" class="input" name="cars">
                         <option value="volvo">Apple</option>
                         <option value="saab">Saab 95</option>
                         <option value="mercedes">Mercedes SLK</option>
                         <option value="audi">Audi TT</option>
+                    </select> -->
+                    <label for="option">What are you interested in?</label><br>
+                    <select id="option" class="input" name="interested">
+                        <option value="" disabled selected>Select option</option>
+                        <option value="bali">Bali</option>
+                        <option value="japan">Japan</option>
+                        <option value="german">German</option>
+                        <option value="indonesian">Indonesian</option>
                     </select>
                 </div>
                 <div>
-                    <button value="submit">SEND</button>
+                    <input class="button" type="submit" value="SEND"></input>
                 </div>
             </form>
         </section>
@@ -235,6 +246,8 @@
         </div>
     </main>
     <hr>
+    <script src="../js/script.js"></script>
 </body>
+
 
 </html>
