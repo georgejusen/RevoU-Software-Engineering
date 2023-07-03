@@ -164,12 +164,18 @@ button{
     border: #6e7783;
 }
 
-.form div button {
+.form div .button {
     width: 360px;
     height: 42px;
     background-color: #89a7b1;
     color: white;
+    border: none;
+    cursor: pointer;
     
+}
+
+.form div .button:hover {
+    background-color: #29323D;
 }
 
 /* user testimonial */
